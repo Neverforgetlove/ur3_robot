@@ -1,0 +1,11 @@
+#----- goal -----#
+ur3_msgs/Header header     #任务头消息
+MotionStep[] msp           #规划序列
+---
+#----- result -----#
+bool result                #反馈结果
+string error_info          #error中止
+---
+#----- feekback -----#
+geometry_msgs/Pose F_pose  #当前末端在世界坐标系中的姿态
+float64[] joint_measure    #当前关节角度

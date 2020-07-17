@@ -1,0 +1,15 @@
+#----- goal -----#
+ur3_msgs/Header header          #任务头消息
+TaskStep[] tsp                  #任务序列
+---
+#----- result -----#
+uint32 task_id                  #任务ID号
+int8 task_type                  #当前任务类型  -- 待定
+bool result                     #任务执行结果
+string error_info               #任务中止error
+---
+#----- feekback -----#
+uint32 task_id                  #当前执行的任务ID
+int8 task_type                  #当前任务类型
+string task_state               #当前执行状态
+string question                 #执行中断ID号

@@ -1,0 +1,1 @@
+rosrun moveit_kinematics create_ikfast_moveit_plugin.py ur3 ur3_arm ur3_ikfast_ur3_arm_plugin /home/cjw/catkin_make/src/ur3_ikfast_ur3_arm_plugin/src/ur3_ur3_arm_ikfast_solver.cpp

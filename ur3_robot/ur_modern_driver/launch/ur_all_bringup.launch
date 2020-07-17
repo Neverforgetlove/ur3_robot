@@ -1,0 +1,17 @@
+<launch>
+
+   <!-- start the UR3-->
+   <include file="$(find ur_modern_driver)/launch/ur3_bringup_joint_limited.launch">
+        <arg name="robot_ip" value="192.168.1.102" />
+   </include>
+
+  <include file="$(find ur3_camera_moveit_config)/launch/ur3_camera_moveit_planning_execution.launch">
+      <arg name="limited" value="true" />
+   </include>
+
+   <include file="$(find ur3_camera_moveit_config)/launch/moveit_rviz.launch">
+      <arg name="config" value="true" />
+   </include>
+
+</launch>
+

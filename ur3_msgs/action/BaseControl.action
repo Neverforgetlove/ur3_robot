@@ -1,0 +1,7 @@
+ur3_msgs/Header header             #任务头消息
+ur3_msgs/ControlStep[] csp         #轨迹序列
+float64 exec_duration              #执行时间
+---
+bool result                        #执行结果
+string error_info                  #返回error
+---
